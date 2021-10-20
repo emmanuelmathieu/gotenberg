@@ -1,7 +1,7 @@
 # Note: ARG instructions do not create additional layers.
 # Instead, next layers will concatenate them.
-ARG DOCKER_REPOSITORY
-ARG GOTENBERG_VERSION
+ARG DOCKER_REPOSITORY = "thecodingmachine/gotenberg"
+ARG GOTENBERG_VERSION = "7.1-cloudrun"
 
 FROM $DOCKER_REPOSITORY/gotenberg:$GOTENBERG_VERSION
 
